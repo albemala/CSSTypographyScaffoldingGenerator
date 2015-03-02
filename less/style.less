@@ -1,0 +1,117 @@
+/* 
+    Created on : 21-feb-2015, 13.33.27
+    Author     : Alberto Malagoli
+*/
+@import "normalize.css";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#tools {
+  position: absolute;
+  left: 0;
+  top: 0;
+//  bottom: 0;
+  width: 250px;
+  color: #9CC4E4;
+  background: #1B325F;
+  //  border-right: 1px solid #ccc;
+
+  * {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+  }
+
+  padding: 16px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  p, hr {
+    margin-bottom: 24px;
+  }
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    color: #3A89C9;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  input[type='text'] {
+    width: 40px;
+    text-align: right;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  input[type='text'], select {
+    height: 24px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+  }
+
+  button {
+    //    font-size: 16px;
+    padding: 6px;
+    color: #1B325F;
+    background: #F26C4F;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover, &:focus {
+      background: darken(#F26C4F, 10%);
+    }
+    &:active {
+      background: darken(#F26C4F, 20%);
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: lighten(#1B325F, 15%); // #3A89C9;
+  }
+}
+
+#preview {
+  margin-left: 282px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-size: 100% 16px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    transition: all 300ms ease-in-out;
+  }
+
+  > * {
+    cursor: pointer;
+  }
+
+  .selected {
+    color: #1B325F;
+    background-color: fadeout(#9CC4E4, 50%);
+  }
+}
+
+.backgroundGrid {
+  background: #fff linear-gradient(#9CC4E4 1px, transparent 1px);
+}
